@@ -8,6 +8,7 @@ ENV PATH="/root/.bun/bin:$PATH"
 
 RUN git clone https://github.com/youssefvdel/qwen-gate.git .
 RUN bun install
+RUN bunx playwright install chromium
 
 ENV PORT=26405
 ENV HOST=0.0.0.0
